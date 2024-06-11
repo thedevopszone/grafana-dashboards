@@ -1,5 +1,31 @@
 # Grafana Dashboards
 
+## Variables
+
+
+node
+```
+Host
+label_values(node_uname_info{job="$job"}, instance)
+```
+
+job
+```
+Job
+label_values(node_uname_info, job)
+```
+
+datasource
+```
+Datasource
+Prometheus
+```
+
+
+
+
+
+
 ## Node Exporter Full
 
 - For node_exporter
